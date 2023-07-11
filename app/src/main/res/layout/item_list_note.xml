@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/bg_shop1"
+    android:paddingStart="20dp">
+
+    <LinearLayout
+        android:id="@+id/llLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="left"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/mark_pro" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="left"
+            android:text="@string/MyText"
+            android:textColor="#3C3C3C"
+            android:textSize="18sp"
+            app:fontFamily="@font/mark_pro" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="left"
+            android:hint="TextView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextClock
+            android:id="@+id/textClock2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:format24Hour="h:mm"
+            android:gravity="start"
+            android:text="@string/textclock"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/llLinear"
+        app:layout_constraintStart_toEndOf="@id/llLinear"
+        app:layout_constraintTop_toTopOf="@id/llLinear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_shop1"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/bg_shop1">
+
+        <EditText
+            android:id="@+id/etShopTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Title"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/delete_this_item" />
+
+        <Button
+            android:id="@+id/btDelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6C6B6D"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6C6B6D"
+            android:text="@string/cancel" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

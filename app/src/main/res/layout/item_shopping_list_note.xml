@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clShopping"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="5dp"
+    android:background="@drawable/bg_shop1"
+    android:paddingStart="20dp">
+
+    <LinearLayout
+        android:id="@+id/llLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/tvShoppingText"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_margin="4dp"
+            android:gravity="start"
+            android:text="@string/MyText"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/tvShoppingTime"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:gravity="start"
+            android:hint="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llClickLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/ibCorrection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_big_button_two"
+            android:src="@drawable/ic_baseline_drive"
+            app:layout_constraintBottom_toBottomOf="@id/llClickLinear"
+            app:layout_constraintStart_toEndOf="@id/llClickLinear" />
+
+        <ImageButton
+            android:id="@+id/ibDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_big_button_two"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="@id/ibCorrection"
+            app:layout_constraintStart_toEndOf="@id/ibCorrection"
+            app:layout_constraintTop_toTopOf="@id/ibCorrection" />
+
+        <Button
+            android:id="@+id/ibPurchases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical"
+            android:text="0/0"
+            android:textSize="20sp"
+            android:textColor="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="@id/ibPurchases"
+            app:layout_constraintStart_toEndOf="@id/ibPurchases"
+            app:layout_constraintTop_toTopOf="@id/ibPurchases" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
